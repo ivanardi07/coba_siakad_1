@@ -76,9 +76,24 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('user.index') }}">
-                        <i class="ni ni-badge text-blue"></i> {{ __('Akun User') }}
+                    <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
+                        <i class="ni ni-badge text-blue"></i>{{ __('Akun User') }}
                     </a>
+                    <div class="collapse hide" id="navbar-examples">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('user.index') }}">
+                                    Akun Siswa
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('user.temp1') }}">
+                                    Akun Guru
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </li>
 
                 <li class="nav-item">
